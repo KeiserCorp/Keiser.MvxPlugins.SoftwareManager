@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>Keiser.MvxPlugins.SoftwareManager</id>
+		<version>1.0.11</version>
+		<title>Keiser.MvxPlugins.SoftwareManager</title>
+		<authors>Keiser Corp.</authors>
+		<owners>Keiser Corp.</owners>
+			<licenseUrl>https://github.com/KeiserCorp/Keiser.MvxPlugins.SoftwareManager/blob/master/LICENSE</licenseUrl>
+			<projectUrl>https://github.com/KeiserCorp/Keiser.MvxPlugins.SoftwareManager</projectUrl>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<description>This package contains the 'SoftwareManager' plugin for MvvmCross v3.</description>
+		<copyright>Copyright 2014</copyright>
+		<tags>xamarin mvvmcross mvx keiser socket</tags>
+		<dependencies>
+			<dependency id="MvvmCross.HotTuna.CrossCore" version="3.2.1" />
+		</dependencies>
+	</metadata>
+	<files>
+		<!-- PCL -->
+		<file src="..\Keiser.MvxPlugins.SoftwareManager\bin\Release\Keiser.MvxPlugins.SoftwareManager.dll" target="lib\portable-net45+win+wp80+MonoAndroid10+MonoTouch10\Keiser.MvxPlugins.SoftwareManager.dll" />
+		<file src="..\Keiser.MvxPlugins.SoftwareManager\bin\Release\Keiser.MvxPlugins.SoftwareManager.dll" target="lib\portable-net45+win+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10\Keiser.MvxPlugins.SoftwareManager.dll" />
+
+		<!-- droid -->
+		<file src="..\Keiser.MvxPlugins.SoftwareManager\bin\Release\Keiser.MvxPlugins.SoftwareManager.dll" target="lib\MonoAndroid\Keiser.MvxPlugins.SoftwareManager.dll" />
+		<file src="..\Keiser.MvxPlugins.SoftwareManager.Droid\bin\Release\Keiser.MvxPlugins.SoftwareManager.Droid.dll" target="lib\MonoAndroid\Keiser.MvxPlugins.SoftwareManager.Droid.dll" />
+		<file src="BootstrapContent\SoftwareManagerPluginBootstrap.cs.pp" target="content\MonoAndroid\Bootstrap\SoftwareManagerPluginBootstrap.cs.pp" />
+		
+		<!-- touch -->
+		<file src="..\Keiser.MvxPlugins.SoftwareManager\bin\Release\Keiser.MvxPlugins.SoftwareManager.dll" target="lib\MonoTouch\Keiser.MvxPlugins.SoftwareManager.dll" />
+		<file src="..\Keiser.MvxPlugins.SoftwareManager.Touch\bin\Release\Keiser.MvxPlugins.SoftwareManager.Touch.dll" target="lib\MonoTouch\Keiser.MvxPlugins.SoftwareManager.Touch.dll" />
+		<file src="BootstrapContent\SoftwareManagerTouchPluginBootstrap.cs.pp" target="content\MonoTouch\Bootstrap\SoftwareManagerPluginBootstrap.cs.pp" />
+	</files>
+</package>

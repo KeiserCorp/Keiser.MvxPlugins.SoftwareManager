@@ -1,0 +1,1 @@
+..\..\nuget push Keiser.MvxPlugins.SoftwareManager.1.0.11.nupkg
