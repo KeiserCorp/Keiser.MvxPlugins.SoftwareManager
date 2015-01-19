@@ -85,5 +85,9 @@
         }
 
         public virtual Platform Platform { get { throw new NotImplementedException(); } }
+
+        private static object _updateLocker = new object();
+        private static bool _doingUpdate = false;
+        public bool DoingUpdate { get { lock (_updateLocker) return _doingUpdate; } protected set { lock (_updateLocker) _doingUpdate = value; } }
     }
 }

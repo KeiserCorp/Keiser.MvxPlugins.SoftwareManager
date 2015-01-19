@@ -89,8 +89,9 @@
 
         public override void DoUpdate()
         {
-            if (!UpdateAvailable)
+            if (DoingUpdate || !UpdateAvailable)
                 return;
+            DoingUpdate = true;
             if (!IsNonPlayAppAllowed)
             {
                 Trace.Info(Context.PackageName);
@@ -155,6 +156,7 @@
                 else
                     connection.Disconnect();
             }
+            DoingUpdate = false;
         }
 
         protected String GetFileName(string url)

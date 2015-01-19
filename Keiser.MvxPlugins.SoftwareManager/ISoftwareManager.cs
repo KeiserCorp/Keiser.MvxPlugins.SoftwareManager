@@ -12,6 +12,7 @@
         Task CheckForUpdateTask(string url);
         void DoUpdate();
         Task DoUpdateTask();
+        bool DoingUpdate { get; }
         event EventHandler UpdaveAvailableHandler;
         Platform Platform { get; }
     }
