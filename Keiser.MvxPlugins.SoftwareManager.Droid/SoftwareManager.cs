@@ -80,11 +80,17 @@
             }
             connection.Disconnect();
             SoftwareVersion updateVersion = GetSoftwareVersion(streamString);
+#if DEBUG
+            Trace.Info("Current Version: " + CurrentVersion.Number + " Update Vesrion:" + updateVersion.Number);
+#endif
             if (updateVersion != null && updateVersion.Number > CurrentVersion.Number)
             {
                 UpdateVersion = updateVersion;
                 UpdateAvailable = true;
             }
+#if DEBUG
+            Trace.Info("Update Available: " + UpdateAvailable);
+#endif
         }
 
         public override void DoUpdate()
