@@ -43,10 +43,13 @@
             {
                 connection.Connect();
             }
+#if DEBUG
             catch (Exception e)
             {
-#if DEBUG
                 Trace.Error("Connection Error: " + e);
+#else
+            catch
+            {
 #endif
                 return;
             }
@@ -117,7 +120,7 @@
                 {
                     connection.Connect();
                 }
-                catch (Exception e)
+                catch
                 {
                     return;
                 }

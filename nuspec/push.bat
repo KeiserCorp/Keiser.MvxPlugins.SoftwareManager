@@ -1,1 +1,1 @@
-..\..\nuget push Keiser.MvxPlugins.SoftwareManager.1.0.12.nupkg
+..\..\nuget push Keiser.MvxPlugins.SoftwareManager.1.0.15.nupkg
