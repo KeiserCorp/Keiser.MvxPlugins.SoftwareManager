@@ -42,7 +42,7 @@
             protected set
             {
                 lock (_updateAvailableLocker)
-                    _updateAvailable = value;
+                    _updateAvailable = true;
                 if (value)
                     UpdateAvailableEvent();
             }

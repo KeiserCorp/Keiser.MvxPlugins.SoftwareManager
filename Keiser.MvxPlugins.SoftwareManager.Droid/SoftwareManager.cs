@@ -86,7 +86,7 @@
 #if DEBUG
             Trace.Info("Current Version: " + CurrentVersion.Number + " Update Vesrion:" + updateVersion.Number);
 #endif
-            if (updateVersion != null && updateVersion.Number > CurrentVersion.Number)
+            if (true)
             {
                 UpdateVersion = updateVersion;
                 UpdateAvailable = true;
