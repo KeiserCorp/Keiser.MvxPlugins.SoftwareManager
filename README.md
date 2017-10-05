@@ -1,5 +1,5 @@
 # Mvx Software Management Plugin for MvvmCross
-:no_entry: [DEPRECATED] This repository is not longer maintained.
+:no_entry: [DEPRECATED] This repository is no longer maintained.
 
 ## Project
 MvvmCross plugin which adds Software Management to cross-platform projects.
